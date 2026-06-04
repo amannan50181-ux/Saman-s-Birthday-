@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Saman ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Poppins,sans-serif;
+background:linear-gradient(135deg,#ffe4ec,#fff5f8);
+overflow:hidden;
+}
+
+.page{
+display:none;
+height:100vh;
+width:100%;
+padding:20px;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+overflow-y:auto;
+}
+
+.active{
+display:flex;
+}
+
+h1{
+font-family:'Dancing Script',cursive;
+font-size:60px;
+color:#ff4081;
+margin-bottom:20px;
+}
+
+.notebook{
+max-width:850px;
+background:white;
+padding:35px;
+border-left:8px solid #ff7aa2;
+border-radius:20px;
+font-family:'Caveat',cursive;
+font-size:32px;
+line-height:1.8;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.btn{
+padding:14px 28px;
+border:none;
+background:#ff4081;
+color:white;
+border-radius:50px;
+margin-top:25px;
+cursor:pointer;
+font-size:18px;
+}
+
+.typing{
+overflow:hidden;
+white-space:nowrap;
+border-right:3px solid #ff4081;
+animation:typing 4s steps(40,end),blink .8s infinite;
+}
+
+@keyframes typing{
+from{width:0}
+to{width:100%}
+}
+
+@keyframes blink{
+50%{border-color:transparent}
+}
+
+.floating{
+position:fixed;
+width:100%;
+height:100%;
+pointer-events:none;
+z-index:-1;
+}
+
+.item{
+position:absolute;
+font-size:24px;
+animation:fall 10s linear infinite;
+}
+
+@keyframes fall{
+0%{
+transform:translateY(-100px);
+opacity:1;
+}
+100%{
+transform:translateY(110vh);
+opacity:0;
+}
+}
+
+.gallery{
+display:flex;
+justify-content:center;
+}
+
+.photo{
+width:250px;
+height:300px;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 4px 10px rgba(0,0,0,.2);
+}
+
+.photo img{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
+}
+
+.cake{
+font-size:150px;
+animation:bounce 2s infinite;
+}
+
+@keyframes bounce{
+50%{
+transform:translateY(-15px);
+}
+}
+
+.hidden{
+display:none;
+}
+
+.memory-photo{
+width:250px;
+height:300px;
+object-fit:cover;
+border-radius:20px;
+margin:20px auto;
+display:block;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.balloons{
+font-size:35px;
+margin:20px 0;
+}
+
+.message{
+max-width:700px;
+margin:auto;
+line-height:1.8;
+font-size:18px;
+}
+
+.confetti{
+position:fixed;
+font-size:25px;
+animation:fall 4s linear forwards;
+}
+</style>
+</head>
+
+<body>
+
+<div class="floating" id="floating"></div>
+
+<!-- PAGE 1 -->
+<div class="page active">
+<h1 class="typing">A Special Birthday Surprise For Saman ❤️</h1>
+<button class="btn" onclick="nextPage()">Open</button>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page">
+<h1>Happy Birthday 🎂</h1>
+<div class="notebook">
+Today is finally your special day.
+A little surprise has been prepared just for you.
+</div>
+<button class="btn" onclick="nextPage()">Next</button>
+</div>
+
+<!-- PAGE 3 -->
+<div class="page">
+<h1>Dear Saman 💌</h1>
+<div class="notebook">
+Happy Birthday to one of the sweetest people I know.
+Even though school days are over, the memories remain special.
+May your life always be filled with happiness and success.
+</div>
+<button class="btn" onclick="nextPage()">Next</button>
+</div>
+
+<!-- PAGE 4 -->
+<div class="page">
+<h1>Memory Lane 📸</h1>
+
+<div class="gallery">
+<div class="photo">
+<img src="photo1.jpg" alt="Photo">
+</div>
+</div>
+
+<button class="btn" onclick="nextPage()">Next</button>
+</div>
+
+<!-- PAGE 5 -->
+<div class="page">
+<h1>Things I Appreciate 🌸</h1>
+<div class="notebook">
+🌷 Your kindness<br>
+🌷 Your smile<br>
+🌷 Your positivity<br>
+🌷 Your friendship<br>
+🌷 Your personality
+     
+And All about Yourself 🌷 
+</div>
+<button class="btn" onclick="nextPage()">Next</button>
+</div>
+
+<!-- PAGE 6 -->
+<div class="page">
+<h1>Secret Message ✨</h1>
+<div class="notebook">
+You deserve every happiness this world has to offer.
+Never stop believing in yourself.
+</div>
+<button class="btn" onclick="nextPage()">Next</button>
+</div>
+
+<!-- PAGE 7 -->
+<div class="page">
+<h1>Wish Upon A Star ⭐</h1>
+<div class="notebook">
+May all your dreams come true.
+May every year bring more joy and beautiful memories.
+</div>
+<button class="btn" onclick="nextPage()">Next</button>
+</div>
+
+<!-- PAGE 8 -->
+<div class="page">
+<h1>Friendship ❤️</h1>
+<div class="notebook">
+Distance may change many things,
+but genuine memories stay forever.
+</div>
+<button class="btn" onclick="nextPage()">Next</button>
+</div>
+
+<!-- PAGE 9 -->
+<div class="page">
+<h1>Final Letter 💖</h1>
+<div class="notebook">
+Thank you for being a wonderful friend.
+Your presence has made many moments brighter.
+May this year be your best year yet.
+</div>
+<button class="btn" onclick="nextPage()">Final Surprise</button>
+</div>
+
+<!-- PAGE 10 -->
+<div class="page">
+
+<h1>🎂 Final Surprise 🎂</h1>
+
+<div class="cake">🎂</div>
+
+<button class="btn" onclick="showSurprise()">Cut The Cake 🎉</button>
+
+<div id="surprise" class="hidden">
+
+<div class="balloons">
+🎈 🎈 🎈 🎈 🎈
+</div>
+
+<img src="photo1.jpg" alt="Special Memory" class="memory-photo">
+
+<h2>Happy Birthday Saman 💖</h2>
+
+<p class="message">
+Some friendships are gifts that life gives us when we least expect them.
+School days may be over, but the memories, laughter and moments we shared
+will always remain special.
+
+<br><br>
+
+Thank you for being such a wonderful friend.
+May your birthday be filled with happiness, success, laughter,
+beautiful memories and countless reasons to smile.
+
+<br><br>
+
+Again Happy Birthday, Saman. 🌸✨
+</p>
+
+<h3 style="margin-top:20px;">🎉 Enjoy Your Special Day 🎉</h3>
+
+<p style="margin-top:20px;font-size:22px;">
+With Best Wishes ❤️<br>
+Abdul Mannan
+</p>
+
+</div>
+
+</div>
+
+<script>
+
+let pages=document.querySelectorAll(".page");
+let current=0;
+
+function nextPage(){
+pages[current].classList.remove("active");
+current++;
+pages[current].classList.add("active");
+}
+
+function createFloating(){
+
+let item=document.createElement("div");
+
+item.className="item";
+
+item.innerHTML=Math.random()>0.5?"🌹":"❤️";
+
+item.style.left=Math.random()*100+"%";
+
+document.getElementById("floating").appendChild(item);
+
+setTimeout(()=>{
+item.remove();
+},10000);
+}
+
+setInterval(createFloating,300);
+
+function showSurprise(){
+
+document.getElementById("surprise").style.display="block";
+
+for(let i=0;i<120;i++){
+
+let c=document.createElement("div");
+
+c.className="confetti";
+
+c.innerHTML=["🎉","✨","🌹","❤️","🎊"][Math.floor(Math.random()*5)];
+
+c.style.left=Math.random()*100+"vw";
+
+document.body.appendChild(c);
+
+setTimeout(()=>{
+c.remove();
+},4000);
+}
+}
+
+</script>
+
+</body>
+</html>
